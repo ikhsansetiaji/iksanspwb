@@ -1,0 +1,177 @@
+
+  /* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Section Header */
+.section-header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.section-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.section-header .btn {
+    font-size: 14px;
+}
+
+/* Table Styles */
+.table {
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+/* Search Input */
+#search-member {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#search-member:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-header .btn-close {
+    color: white;
+}
+
+.modal-body .form-label {
+    font-weight: bold;
+}
+
+.modal-body .form-control, 
+.modal-body .form-select {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.modal-footer .btn {
+    border-radius: 8px;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+}
+
+.modal-footer .btn-primary {
+    background-color: #28a745;
+}
+.modal {
+    z-index: 1050; /* Pastikan modal berada di atas */
+}
+
+.modal-backdrop {
+    z-index: 1040; /* Pastikan backdrop di bawah modal */
+    background-color: rgba(0, 0, 0, 0.5); /* Atur transparansi latar belakang */
+}
+.modal-backdrop.show {
+    opacity: 0.5; /* Transparansi normal */
+}
+
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.pagination .page-link {
+    border-radius: 8px;
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+}
+
+.pagination .page-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+/* Hover Effect for Buttons */
+.btn {
+    transition: all 0.3s ease; /* Menambahkan transisi untuk efek hover */
+}
+
+.btn:hover {
+    transform: translateY(-2px); /* Efek mengangkat tombol sedikit */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada tombol */
+}
+
+/* Tombol Batal */
+.btn-secondary:hover {
+    background-color: #6c757d; /* Mengubah warna latar belakang tombol batal saat hover */
+    color: white;
+}
+
+/* Tombol Reset */
+.btn-warning:hover {
+    background-color: #f0ad4e; /* Mengubah warna latar belakang tombol reset saat hover */
+    color: white;
+}
+
+/* Tombol Simpan */
+.btn-primary:hover {
+    background-color: #218838; /* Mengubah warna latar belakang tombol simpan saat hover */
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-header h1 {
+        font-size: 20px;
+    }
+
+    .table th, .table td {
+        font-size: 12px;
+    }
+}
